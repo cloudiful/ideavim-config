@@ -1,0 +1,48 @@
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+let mapleader = " "
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+set which-key
+set timeoutlen=5000
+
+" Do incremental searching.
+set incsearch
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+map <leader>d <Action>(Debug)
+map <leader>r <Action>(Run)
+map j <Action>(AceAction)
+
+" use q to insert | a to append
+nnoremap q i
+nnoremap e a
+
+" use k to delete
+nnoremap k d
+nnoremap kk dd
+
+" use wasd to move around like a game
+nnoremap w k
+nnoremap s j
+nnoremap a h
+nnoremap d l
+
+" use W to page up | use S to page down
+" use A to jump to previous word's end | D to next word's end
+nnoremap W <C-b>
+nnoremap S <C-f>
+nnoremap A ge
+nnoremap D e
+
+" use ` to start of the line | 0 to end of the line
+nnoremap ` ^
+nnoremap 0 $
