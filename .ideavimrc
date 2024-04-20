@@ -12,6 +12,8 @@ set scrolloff=5
 set which-key
 set timeoutlen=5000
 
+set keep-english-in-normal-and-restore-in-insert
+
 " Do incremental searching.
 set incsearch
 
@@ -21,28 +23,29 @@ map Q gq
 map <leader>d <Action>(Debug)
 map <leader>r <Action>(Run)
 map j <Action>(AceAction)
+map <leader>f <Action>(ReformatCode)
 
 " use q to insert | a to append
-nnoremap q i
-nnoremap e a
+noremap q i
+noremap e a
 
 " use k to delete
-nnoremap k d
-nnoremap kk dd
+noremap k d
+noremap kk dd
 
 " use wasd to move around like a game
-nnoremap w k
-nnoremap s j
-nnoremap a h
-nnoremap d l
+noremap w k
+noremap s j
+noremap a h
+noremap d l
 
 " use W to page up | use S to page down
 " use A to jump to previous word's end | D to next word's end
-nnoremap W <C-b>
-nnoremap S <C-f>
-nnoremap A ge
-nnoremap D e
+noremap W <C-b>
+noremap S <C-f>
+noremap A ge
+noremap D e
 
 " use ` to start of the line | 0 to end of the line
-nnoremap ` ^
-nnoremap 0 $
+noremap ` ^
+noremap 0 $
